@@ -85,7 +85,12 @@ public class FirstRjgc {
             }
             mazeSize[x][y]++;
         }
-        System.out.println(min);
+        if(min!=size*size+1) {
+            System.out.println(min);
+        }
+        else{
+            System.out.println("没有到达终点的路");
+        }
     }
     public static void main(String[] args) {
         long startTime = System.currentTimeMillis();
