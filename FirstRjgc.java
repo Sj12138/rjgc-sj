@@ -13,19 +13,8 @@ public class FirstRjgc {
             return 0;
         }
     }
-    public static void input( int size, int[][] maze_size){
-        System.out.println("输入迷宫样式(一行输入)");
-        for(int i=0;i<size;i++) {
-            Scanner sc1=new Scanner(System.in);
-            String inputString = sc1.nextLine();
-            String[] stringArray = inputString.split(" ");
-            for (int j = 0; j < size; j++) {
-                maze_size[i][j] = Integer.parseInt(stringArray[j]);
-            }
-        }
-    }
-
     public static void lookup(int size, int[][] mazeSize) {
+        long startTime = System.currentTimeMillis();
         int x = 1, y = 1;
         int num = 0;
         int min=size*size+1;
@@ -91,13 +80,19 @@ public class FirstRjgc {
         else{
             System.out.println("没有到达终点的路");
         }
+        long endTime = System.currentTimeMillis();
+        System.out.println("程序运行时间："+(endTime-startTime)+"ms");
     }
     public static void main(String[] args) {
         int size;
         Scanner sc=new Scanner(System.in);
         size=sc.nextInt();
         int [][] mazeSize =new int[size][size];
-        input(size, mazeSize );
+        for(int i=0;i<size;i++){
+            for(int j=0;j<size;j++){
+                mazeSize[i][j]=sc.nextInt();
+            }
+        }
         lookup(size, mazeSize );
     }
 }
