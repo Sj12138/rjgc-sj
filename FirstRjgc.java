@@ -93,14 +93,11 @@ public class FirstRjgc {
         }
     }
     public static void main(String[] args) {
-        long startTime = System.currentTimeMillis();
         int size;
         Scanner sc=new Scanner(System.in);
         size=sc.nextInt();
         int [][] mazeSize =new int[size][size];
         input(size, mazeSize );
         lookup(size, mazeSize );
-        long endTime = System.currentTimeMillis();
-        System.out.println("程序运行时间："+(endTime-startTime)+"ms");
     }
 }
