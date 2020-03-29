@@ -84,7 +84,6 @@ public class Sudoku {
         }
         out.write("\r\n");
         out.close();
-        System.out.println();
     }
     public static void text2(int m,int[][]shudu,String fileoutput) throws IOException {
             int [][] shudujudge=new int[m][m];
