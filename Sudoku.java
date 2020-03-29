@@ -78,13 +78,12 @@ public class Sudoku {
         FileWriter out = new FileWriter(file,true);
         for(int i=0;i<m;i++){
             for(int j=0;j<m;j++){
-                out.write(shudu[i][j]+"\t");
+                out.write(shudu[i][j]+" ");
             }
             out.write("\r\n");
         }
         out.write("\r\n");
         out.close();
-        System.out.println();
     }
     public static void text2(int m,int[][]shudu,String fileoutput) throws IOException {
             int [][] shudujudge=new int[m][m];
@@ -191,7 +190,7 @@ public class Sudoku {
         FileWriter out = new FileWriter(file,true);
         for(int i=0;i<m;i++){
             for(int j=0;j<m;j++){
-                out.write(shudu[i][j]+"\t");
+                out.write(shudu[i][j]+" ");
             }
             out.write("\r\n");
         }
@@ -310,7 +309,7 @@ public class Sudoku {
         FileWriter out = new FileWriter(file,true);
         for(int i=0;i<m;i++){
             for(int j=0;j<m;j++){
-                out.write(shudu[i][j]+"\t");
+                out.write(shudu[i][j]+" ");
             }
             out.write("\r\n");
         }
