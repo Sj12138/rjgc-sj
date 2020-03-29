@@ -78,7 +78,7 @@ public class Sudoku {
         FileWriter out = new FileWriter(file,true);
         for(int i=0;i<m;i++){
             for(int j=0;j<m;j++){
-                out.write(shudu[i][j]+"\t");
+                out.write(shudu[i][j]+" ");
             }
             out.write("\r\n");
         }
@@ -190,7 +190,7 @@ public class Sudoku {
         FileWriter out = new FileWriter(file,true);
         for(int i=0;i<m;i++){
             for(int j=0;j<m;j++){
-                out.write(shudu[i][j]+"\t");
+                out.write(shudu[i][j]+" ");
             }
             out.write("\r\n");
         }
@@ -309,7 +309,7 @@ public class Sudoku {
         FileWriter out = new FileWriter(file,true);
         for(int i=0;i<m;i++){
             for(int j=0;j<m;j++){
-                out.write(shudu[i][j]+"\t");
+                out.write(shudu[i][j]+" ");
             }
             out.write("\r\n");
         }
