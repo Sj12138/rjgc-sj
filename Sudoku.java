@@ -320,14 +320,18 @@ public class Sudoku {
 
     public static void main(String[] args) throws IOException {
         Scanner sc=new Scanner(System.in);
-        System.out.print("-m"+" ");
-        int m=sc.nextInt();
-        System.out.print("-n"+" ");
-        int n=sc.nextInt();
-        System.out.print("-i"+" ");
-        String fileinput=sc.next();
-        System.out.print("-o"+" ");
-        String fileoutput=sc.next();
+        //System.out.print("-m"+" ");
+        //int m=sc.nextInt();
+        //System.out.print("-n"+" ");
+        //int n=sc.nextInt();
+        //System.out.print("-i"+" ");
+       // String fileinput=sc.next();
+        //System.out.print("-o"+" ");
+        //String fileoutput=sc.next();
+        int m=Integer.valueOf(args[1]).intValue();
+        int n=Integer.valueOf(args[3]).intValue();
+        String fileinput=args[5];
+        String fileoutput=args[7];
         ArrayList<int[][]> problems=new ArrayList<>();
         int [][]shudu=new int[m][m];
         BufferedReader bf = new BufferedReader(new FileReader(fileinput));
