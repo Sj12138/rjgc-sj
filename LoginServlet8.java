@@ -75,12 +75,12 @@ public class LoginServlet8 extends HttpServlet{
 						if(i==name.length()) {
 							break;
 						}	
-						if(pd==0&&name.charAt(i)!='£∫') {
+						if(pd==0&&name.charAt(i)!='Ôºö') {
 							arr[0].a=arr[0].a+name.charAt(i);
 							i++;
 							continue;
 					}
-						if(pd==0&&name.charAt(i)=='£∫') {
+						if(pd==0&&name.charAt(i)=='Ôºö') {
 							pd=1;
 							i++;
 							continue;
@@ -95,12 +95,12 @@ public class LoginServlet8 extends HttpServlet{
 							i++;
 							continue;
 						}
-						if(pd==3&&name.charAt(i)!='£∫') {
+						if(pd==3&&name.charAt(i)!='Ôºö') {
 							are[n].a=are[n].a+name.charAt(i);
 							i++;
 							continue;
 						}
-						if(pd==3&&name.charAt(i)=='£∫') {
+						if(pd==3&&name.charAt(i)=='Ôºö') {
 							pd=4;
 							i++;
 							continue;
@@ -124,31 +124,6 @@ public class LoginServlet8 extends HttpServlet{
 					req.getRequestDispatcher(path).forward(req,resp);
 				/*	pstmt=conn.prepareStatement(";");
 					rs=pstmt.executeQuery();
-					if(rs.next()) {
-						id=rs.getString(1);
-						flag=true;
-					}
-					else {
-						 info.add("’À∫≈ªÚ√‹¬Î ‰»Î¥ÌŒÛ£¨«Î÷ÿ–¬ ‰»Î");
-					}
-				}catch(Exception e) {
-					System.out.println(e);
-				}
-				finally {
-					try {
-						rs.close();
-						pstmt.close();
-						conn.close();
-					}catch(Exception e) {}
-				}
-				
-				if(flag){
-					session.setAttribute("id",id);
-					session.setAttribute("name",name);
-					req.getRequestDispatcher(path1).forward(req,resp);
-				}
-				}else{
-          }
 		req.setAttribute("info",info);
 		req.getRequestDispatcher(path).forward(req,resp);
 	}*/
